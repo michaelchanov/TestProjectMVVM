@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.justtestproject.R
-import com.example.justtestproject.remote.json_objects.Result
+import com.example.justtestproject.data.remote.json_objects.Result
 import kotlinx.android.synthetic.main.recyclerview_item.view.*
 
 class RecyclerAdapter(): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){

@@ -1,4 +1,4 @@
-package com.example.justtestproject.remote.retrofit
+package com.example.justtestproject.data.remote.retrofit
 
 import com.example.justtestproject.common.Constants
 import com.example.justtestproject.presentation.ui.firstFragment.FirstFragment

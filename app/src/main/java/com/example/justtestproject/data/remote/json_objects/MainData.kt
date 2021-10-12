@@ -1,4 +1,4 @@
-package com.example.justtestproject.remote.json_objects
+package com.example.justtestproject.data.remote.json_objects
 
 data class MainData(
     val results: List<Result>,
