@@ -1,8 +1,7 @@
 package com.example.justtestproject.remote.retrofit
 
 import com.example.justtestproject.common.Constants
-import com.example.justtestproject.remote.json_objects.MainData
-import com.example.justtestproject.ui.FirstFragment
+import com.example.justtestproject.presentation.ui.firstFragment.FirstFragment
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async

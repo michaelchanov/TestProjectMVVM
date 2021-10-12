@@ -1,4 +1,4 @@
-package com.example.justtestproject.ui.recyclerview
+package com.example.justtestproject.presentation.recyclerview
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,8 +7,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.justtestproject.R
 import com.example.justtestproject.remote.json_objects.Result
-import com.example.justtestproject.ui.SecondFragment
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.recyclerview_item.view.*
 
 class RecyclerAdapter(): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){

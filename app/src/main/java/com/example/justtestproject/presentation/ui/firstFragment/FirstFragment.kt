@@ -1,10 +1,11 @@
-package com.example.justtestproject.ui
+package com.example.justtestproject.presentation.ui.firstFragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import com.example.justtestproject.R
 import com.example.justtestproject.databinding.FragmentFirstBinding
+import com.example.justtestproject.presentation.ui.secondFragment.SecondFragment
 
 
 class FirstFragment : Fragment(R.layout.fragment_first) {
