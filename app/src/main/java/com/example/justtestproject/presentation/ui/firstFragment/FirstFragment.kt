@@ -1,18 +1,20 @@
 package com.example.justtestproject.presentation.ui.firstFragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.View
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.justtestproject.R
 import com.example.justtestproject.databinding.FragmentFirstBinding
-import com.example.justtestproject.presentation.ui.secondFragment.SecondFragment
 
 
 class FirstFragment : Fragment(R.layout.fragment_first) {
     private lateinit var binding: FragmentFirstBinding
+
     companion object {
         var word = ""
-        }
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentFirstBinding.bind(view)
@@ -20,9 +22,7 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
 
         binding.buttonNext.setOnClickListener {
             word = binding.searchBar.text.toString()
-            fragmentManager?.beginTransaction()
-                ?.replace(R.id.fragmentContainer, SecondFragment())
-                ?.commit()
+            findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
         }
     }
 

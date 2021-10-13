@@ -9,11 +9,11 @@ import com.example.justtestproject.R
 import com.example.justtestproject.data.remote.json_objects.Result
 import kotlinx.android.synthetic.main.recyclerview_item.view.*
 
-class RecyclerAdapter(): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
+class RecyclerAdapter() : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     var listResults = mutableListOf<Result>()
 
-    fun setData(list: MutableList<Result>){
+    fun setData(list: MutableList<Result>) {
         listResults.addAll(list)
         notifyDataSetChanged()
     }
@@ -25,8 +25,8 @@ class RecyclerAdapter(): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-    val itemView = LayoutInflater.from(parent.context)
-        .inflate(R.layout.recyclerview_item, parent, false)
+        val itemView = LayoutInflater.from(parent.context)
+            .inflate(R.layout.recyclerview_item, parent, false)
         return ViewHolder(itemView)
     }
 
@@ -43,24 +43,3 @@ class RecyclerAdapter(): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
     }
 
 }
-
-
-
-
-
-
-
-
-
-//        val currentItem = results[position].urls.full
-//
-//        SecondFragment.picasso = Picasso.with(holder.itemImage.context).load(currentItem)
-//
-
-//    private val results = mutableListOf<Result>()
-//    fun setData(list: MutableList<Result>){
-
-
-
-//        results.addAll(list)
-//        notifyDataSetChanged()

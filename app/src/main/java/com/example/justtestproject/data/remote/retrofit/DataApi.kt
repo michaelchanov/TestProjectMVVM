@@ -8,9 +8,9 @@ import retrofit2.http.Query
 interface DataApi {
 
     @GET("/search/photos")
-     fun getData(
+    fun getData(
         @Query("page") page: Int,
         @Query("query") query: String,
         @Query("client_id") clientId: String
-    ) : Call<MainData>
+    ): Call<MainData>
 }
